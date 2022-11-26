@@ -196,27 +196,24 @@
 
 .contact {
   display: none;
-  margin-left: auto;
-  gap: 30px;
-  @media screen and (min-width:768px) {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-left: 96px;
-
-font-weight: 500;
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.02em;
-color: #757575;
+  
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-left: 96px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+      gap: 30px;
   }
 }
 
 .header-contact {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
   display: flex;
@@ -226,14 +223,27 @@ color: #757575;
   &:focus {
     color: var(--acent);
   }
-}
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.14;
+    }
+  }
+
 
 .svg-envelope {
   fill: currentColor;
   margin-right: 10px;
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 .svg-tel {
   fill: currentColor;
   margin-right: 10px;
+  @media screen and (min-width: 1200px) {
+    width: 12px;
+    height: 16px;
+  }
 }
