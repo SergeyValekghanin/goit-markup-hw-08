@@ -192,70 +192,56 @@ body {
   }
 }
 
-.mob-menu {
+.container-mob-menu {
   width: 100vw;
   height: 100vh;
-  background-color: #fff;
   top: 0;
   position: fixed;
   z-index: 1;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  background-color: #fff;
   padding-left: 40px;
-  padding-right: 40px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 48px;
 }
 
-.container-mob-menu {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: auto;
+.mob-menu-btn-close {
+  margin-left: auto;
+  display: block;
+  border: none;
+  background-color: transparent;
+  padding: 0;
 }
 
 .mob-menu-top {
   margin-bottom: 32px;
 }
 
-.mob-menu-btn-close {
-  margin-bottom: 8px;
-  margin-left: auto;
-  display: block;
-  border: none;
-  background-color: transparent;
-}
-
-.mob-menu-btn-close:focus {
-  color: var(--acent);
-}
-
-.mob-menu-list {
+.mob-menu {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  gap: 35px;
+  gap: 32px;
+  margin-bottom: 302px;
 }
 
 .mob-menu-link {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.02em;
   color: #212121;
 }
 
-.mobile-connect-list {
+.mobile-connect {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   margin-bottom: 64px;
 }
 
-.mobile-connect-item {
-  margin-bottom: 32px;
-}
-
-.mob-connect-tel {
+.mobile-connect-tel {
+  font-style: normal;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
@@ -263,36 +249,13 @@ body {
   color: var(--acent);
 }
 
-.mob-connect-mail {
+.mobile-connect-mail {
+  font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
-}
-
-.mob-soc {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-.mob-soc-item {
-  padding-right: 10px;
-}
-
-.mob-soc-item:not(:last-child) {
-  margin-right: 10px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-
-.mob-soc-link {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-  color: var(--acent);
-  text-decoration: none;
 }
 
 .site-nav {
