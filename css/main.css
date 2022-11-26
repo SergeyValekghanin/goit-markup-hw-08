@@ -978,7 +978,7 @@ body {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     height: 581px;
@@ -1095,7 +1095,7 @@ body {
   border: 1px solid var(--acent);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .textarea {
     width: 448px;
   }
@@ -1134,9 +1134,8 @@ body {
 .checkbox-field {
   display: flex;
   align-items: center;
-  padding-right: 11px;
+  justify-content: center;
   margin-bottom: 30px;
-  position: relative;
 }
 
 .polici-text {
