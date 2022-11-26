@@ -1,0 +1,9 @@
+.list.net {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.net-item {
+  width: calc((100% - 60px) / 3);
+}

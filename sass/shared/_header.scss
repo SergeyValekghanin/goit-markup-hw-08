@@ -1,0 +1,239 @@
+.heder-section {
+  border-bottom: 1px solid var(--border-heder);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo-web {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--acent);
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    font-size: 26px;
+  }
+}
+
+.logo-header {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--black-logo-header);
+}
+
+.mob-menu-btn-open {
+  display: none;
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    display: block;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.mob-menu {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #fff;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.container-mob-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.mob-menu-top {
+  margin-bottom: 32px;
+}
+
+.mob-menu-btn-close {
+  margin-bottom: 8px;
+
+  margin-left: auto;
+  display: block;
+  border: none;
+  background-color: transparent;
+}
+
+.mob-menu-btn-close:focus {
+  color: var(--acent);
+}
+
+.mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 35px;
+  // margin-bottom: 302px;
+}
+
+.mob-menu-link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mobile-connect-list {
+  margin-bottom: 64px;
+}
+
+.mobile-connect-item {
+  margin-bottom: 32px;
+}
+
+.mob-connect-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--acent);
+}
+.mob-connect-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.mob-soc {
+  display: flex;
+  // gap: 20px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.mob-soc-item {
+  padding-right: 10px;
+}
+
+.mob-soc-item:not(:last-child) {
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mob-soc-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--acent);
+  text-decoration: none;
+}
+
+.site-nav {
+  display: none;
+  margin-left: 90px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--nav-header-link);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--acent);
+  }
+}
+
+.current {
+  color: var(--acent);
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--acent);
+  }
+}
+
+.contact {
+  display: none;
+  margin-left: auto;
+  gap: 30px;
+  @media screen and (min-width:768px) {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 96px;
+
+font-weight: 500;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.02em;
+color: #757575;
+  }
+}
+
+.header-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--acent);
+  }
+}
+
+.svg-envelope {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.svg-tel {
+  fill: currentColor;
+  margin-right: 10px;
+}

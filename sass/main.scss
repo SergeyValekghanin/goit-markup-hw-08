@@ -1,0 +1,18 @@
+@import './utils/variables';
+
+@import './base/reset';
+@import './base/base';
+@import './base/visually-hidden';
+
+@import './shared/header';
+@import './shared/footer';
+@import './shared/footer-form';
+@import './shared/section-title';
+
+@import './main-layouts/hero';
+@import './main-layouts/benefits';
+@import './main-layouts/what-we-do';
+@import './main-layouts/our-team';
+@import './main-layouts/our-clients';
+@import './main-layouts/modal-window';
+@import './main-layouts//modal-form';
