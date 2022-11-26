@@ -1136,6 +1136,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .polici-text {
@@ -1197,7 +1198,14 @@ body {
 .icon-check-cheked {
   position: absolute;
   opacity: 0;
+  left: 9px;
+}
+@media screen and (min-width: 1200) {
+  .icon-check-cheked {
+    left: 48px;
+  }
 }
 .checkbox:checked ~ .icon-check-cheked {
   opacity: 1;
+  top: 0;
 }/*# sourceMappingURL=main.css.map */

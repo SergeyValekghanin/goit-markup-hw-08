@@ -115,6 +115,8 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+
+  position: relative;
 }
 
 .polici-text {
@@ -178,7 +180,13 @@
 .icon-check-cheked {
   position: absolute;
   opacity: 0;
+  left: 9px;
+  @media screen and (min-width:1200) {
+    left: 48px;
+    
+  }
   .checkbox:checked ~ & {
     opacity: 1;
+    top: 0;
   }
 }
