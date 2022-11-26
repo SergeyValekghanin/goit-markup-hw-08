@@ -205,6 +205,12 @@ body {
   padding-bottom: 48px;
 }
 
+.menu-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .mob-menu-btn-close {
   margin-left: auto;
   display: block;
@@ -256,6 +262,28 @@ body {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+.mobile-soc {
+  display: flex;
+}
+
+.mobile-soc-item:not(:last-child) {
+  padding-right: 10px;
+}
+
+.mobile-soc-item:not(:last-child) {
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-soc-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--acent);
+  text-decoration: none;
 }
 
 .site-nav {
