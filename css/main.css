@@ -129,6 +129,12 @@ body {
 
 .heder-section {
   border-bottom: 1px solid var(--border-heder);
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .heder-section {
+    height: 80px;
+  }
 }
 
 .header-nav {
@@ -139,6 +145,12 @@ body {
 .main-nav {
   display: flex;
   align-items: center;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .main-nav {
+    height: 80px;
+  }
 }
 
 .logo-web {
