@@ -266,6 +266,7 @@ body {
 
 .mobile-soc {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobile-soc-item:not(:last-child) {

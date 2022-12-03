@@ -266,6 +266,7 @@ body {
 
 .mobile-soc {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobile-soc-item:not(:last-child) {
@@ -623,13 +624,14 @@ body {
   text-align: center;
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   color: var(--title);
 }
 @media screen and (min-width: 1200px) {
   .sention-title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -638,7 +640,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 360px;
+  max-width: 360px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -650,7 +652,7 @@ body {
   .hero-title {
     font-size: 44px;
     line-height: 1.36;
-    width: 696px;
+    max-width: 696px;
   }
 }
 
@@ -970,6 +972,11 @@ body {
   left: 50%;
   width: 450px;
   height: 609px;
+  width: 95%;
+  max-width: 450px;
+  height: 95%;
+  max-height: 609px;
+  overflow: scroll;
   transform: translate(-50%, -50%);
   padding: 40px;
   background-color: #fff;
@@ -980,8 +987,10 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
     height: 581px;
+    max-height: 609px;
+    overflow: scroll;
   }
 }
 
